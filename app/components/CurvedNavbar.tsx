@@ -48,7 +48,7 @@ const CurvedNavbar = () => {
           {/* LEFT - Name */}
           <div className="flex-1">
             <Link href="/" className="text-lg font-bold truncate text-white">
-              Md. Shanto
+              MD. SHANTO 
             </Link>
           </div>
 
