@@ -6,8 +6,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import CustomTheme from "../theme/CustomTheme";
 
 const navLinks = [
-  { name: "Edu", href: "#education" },
   { name: "About", href: "#about" },
+  { name: "Edu", href: "#education" },
   { name: "Contact", href: "#contact" },
 ];
 
@@ -48,7 +48,7 @@ const CurvedNavbar = () => {
           {/* LEFT - Name */}
           <div className="flex-1">
             <Link href="/" className="text-lg font-bold truncate text-white">
-              Your Name Here
+              Md. Shanto
             </Link>
           </div>
 
