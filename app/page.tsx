@@ -1,10 +1,15 @@
 import Image from "next/image";
 import CustomTheme from "./theme/CustomTheme";
 import CurvedNavbar from "./components/CurvedNavbar";
+import Intro from "./components/Intro";
 
 export default function Home() {
   return (
     <>
+      <Intro
+        imageUrl="/images/g_1.jpg"
+        text="Hello! I'm Shanto, a passionate Full Stack Developer with expertise in building dynamic and responsive web applications. I love crafting clean and efficient code while exploring the latest technologies in the web development world."
+      ></Intro>
       {/* <CurvedNavbar /> */}
       {/*  <CustomTheme />
       <h1 className="text-3xl font-bold p-4">Hello Bangladesh</h1>
