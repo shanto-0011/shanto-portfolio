@@ -8,6 +8,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens:{
+        'xs': '480px',
+        
+      },
       keyframes:{
         gradientShift:{
           '0%, 100%': { backgroundPosition: '0% 50%'},
