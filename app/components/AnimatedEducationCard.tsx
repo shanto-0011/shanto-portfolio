@@ -75,7 +75,7 @@ const AnimatedEducationCard = ({
         </div>
 
         {/* Title */}
-        <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200">
+        <h3 className="text-xl font-bold ">
           {title}
         </h3>
       </div>
