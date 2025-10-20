@@ -58,8 +58,8 @@ const EducationSection = () => {
     <section
       className="
         w-full py-6 px-4 md:px-8 my-4 rounded-[10px]
-        bg-gradient-to-br from-[#bd89ee] to-purple-800
-        dark:from-purple-900 dark:to-purple-950
+        bg-gradient-to-br from-[#28b6ee] to-fuchsia-300
+        
         flex flex-col items-center justify-center
       "
     >
@@ -78,21 +78,21 @@ const EducationSection = () => {
           <AnimatedEducationCard
             imageUrl="/images/annada.jpg"
             title="Annada Govt. High School"
-            description="Our programs cover a wide range of subjects, ensuring a holistic learning experience."
+            description="I complete my secondary education here with excellent academic performance and extracurricular involvement."
           />
         </div>
         <div className="group">
           <AnimatedEducationCard
             imageUrl="/images/bbaria.jpg"
             title="Brahmanbaria Govt. College"
-            description="Learn from industry leaders and experienced educators passionate about teaching."
+            description="I pursued my higher secondary education here, focusing on science subjects and actively participating in various clubs and activities."
           />
         </div>
         <div className="group">
           <AnimatedEducationCard
             imageUrl="/images/aust.jpg"
             title="Ahsanullah University of Science and Technology"
-            description="Engage with dynamic content, practical exercises, and collaborative projects."
+            description="I am currently pursuing my Bachelor's degree in Computer Science and Engineering, gaining hands-on experience in software development and research."
           />
         </div>
       </div>
