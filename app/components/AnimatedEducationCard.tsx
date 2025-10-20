@@ -16,15 +16,13 @@ const AnimatedEducationCard = ({
   description,
   delay = 0,
 }: AnimatedEducationCardProps) => {
-  // State to control visibility on touch devices
   const [isMobileActive, setIsMobileActive] = useState(false);
-  // State to track if the device supports hover
-  const [canHover, setCanHover] = useState(true); // Assume can hover initially
+  const [canHover, setCanHover] = useState(true); 
 
   useEffect(() => {
-    // Check for hover capability on mount
     if (typeof window !== 'undefined') {
       const mediaQuery = window.matchMedia("(hover: hover) and (pointer: fine)");
+      console.log("Media Query Matches:", mediaQuery.matches);
       setCanHover(mediaQuery.matches);
 
       const handleChange = (e: MediaQueryListEvent) => {
@@ -36,11 +34,9 @@ const AnimatedEducationCard = ({
   }, []);
 
   const handleCardClick = () => {
-    // Only toggle active state if the device does NOT support hover (i.e., touch device)
     if (!canHover) {
       setIsMobileActive(!isMobileActive);
     }
-    // If it's a hover device, the CSS :hover handles it, and click might trigger a navigation later.
   };
 
   return (
@@ -73,7 +69,7 @@ const AnimatedEducationCard = ({
             src={imageUrl}
             alt={title}
             layout="fill"
-            objectFit="contain" // Changed back to contain to ensure image is not cut
+            objectFit="fill" // Changed back to contain to ensure image is not cut
             className="group-hover:scale-105 transition-transform duration-300"
           />
         </div>
