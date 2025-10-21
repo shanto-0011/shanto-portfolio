@@ -3,6 +3,7 @@ import CustomTheme from "./theme/CustomTheme";
 import CurvedNavbar from "./components/CurvedNavbar";
 import Intro from "./components/Intro";
 import EducationSection from "./components/EduSection";
+import ContactSection from "./components/contact";
 
 export default function Home() {
   return (
@@ -16,6 +17,12 @@ export default function Home() {
               </p>`}
       ></Intro>
       <EducationSection />
+      <ContactSection
+        contactImageUrl="/images/contact.png" // Replace with your PNG path
+        email="contact123fgtk13@example.com"
+        phone="+1234567890"
+        linkedinUrl="https://www.linkedin.com/in/yourprofile"
+      />
     </>
   );
 }
