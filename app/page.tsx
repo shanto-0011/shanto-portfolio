@@ -18,10 +18,10 @@ export default function Home() {
       ></Intro>
       <EducationSection />
       <ContactSection
-        contactImageUrl="/images/contact.png" // Replace with your PNG path
-        email="contact123fgtk13@example.com"
-        phone="+1234567890"
-        linkedinUrl="https://www.linkedin.com/in/yourprofile"
+        contactImageUrl="/images/contact.png" 
+        email="mosanta91977@gmail.com"
+        phone="+8801646003802"
+        whatsapp="https://www.linkedin.com/in/yourprofile"
       />
     </>
   );
