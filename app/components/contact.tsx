@@ -10,13 +10,13 @@ interface ContactSectionProps {
   //cvDownloadPath: string;
 }
 
-const ContactSection: React.FC<ContactSectionProps> = ({
+const ContactSection = ({
   contactImageUrl,
   email,
   phone,
   whatsapp,
-  // cvDownloadPath,
-}) => {
+}: // cvDownloadPath,
+ContactSectionProps) => {
   return (
     <section className="w-full py-8  px-4 md:px-8 ">
       <div className="max-w-6xl mx-auto ">
@@ -92,9 +92,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({
               />
             </div>
 
-            {/* <h3 className="text-[16px] font-[700] mx-auto  my-4 text-center">
-              Contact
-            </h3> */}
+            
             <div className="space-y-[10px] mb-6 w-full max-w-xs sm:max-w-none">
               <p className="flex items-start text-[16px] font-[400]">
                 <FaEnvelope className="mr-4 text-[#be28ec] text-[18px] flex-shrink-0 text-center py-auto  my-auto" />
@@ -115,15 +113,12 @@ const ContactSection: React.FC<ContactSectionProps> = ({
                   {phone}
                 </a>
               </p>
-              {/* LinkedIn */}
               <p className="flex items-center text-[16px] font-[400]">
                 <FaWhatsapp className="mr-2 text-[#be28ec] text-[22px] flex-shrink-0 text-center py-auto  my-auto" />
                 <a
                   href={`tel:${phone}`}
                   className="link link-hover min-w-0 break-all"
                 >
-                  {" "}
-                  {/* Also added for phone */}
                   {phone}
                 </a>
               </p>
