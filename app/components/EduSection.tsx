@@ -1,12 +1,10 @@
 import React from "react";
 import AnimatedEducationCard from "./AnimatedEducationCard";
 
-
-
-
 const EducationSection = () => {
   return (
     <section
+    
       className="
         w-full py-4 px-4 md:px-8 my-8 rounded-[10px]
         bg-gradient-to-br from-[#6898f0] to-fuchsia-200

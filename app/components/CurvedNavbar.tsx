@@ -7,8 +7,9 @@ import CustomTheme from "../theme/CustomTheme";
 
 const navLinks = [
   { name: "About", href: "#about" },
-  { name: "Edu", href: "#education" },
+  { name: "Education", href: "#education" },
   { name: "Contact", href: "#contact" },
+  { name: "Skills", href: "#skill" },
 ];
 
 const projectCategories = [
