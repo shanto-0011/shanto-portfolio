@@ -8,13 +8,14 @@ import CustomTheme from "../theme/CustomTheme";
 const navLinks = [
   { name: "About", href: "#about" },
   { name: "Education", href: "#education" },
-  { name: "Contact", href: "#contact" },
   { name: "Skills", href: "#skill" },
+  { name: "Contact", href: "#contact" },
+  
 ];
 
 const projectCategories = [
-  { name: "Industrial", href: "/projects/category-a" },
-  { name: "Versity", href: "/projects/category-b" },
+  { name: "Professional", href: "/projects/category-a" },
+  { name: "Personal", href: "/projects/category-b" },
 ];
 
 const CurvedNavbar = () => {
@@ -134,9 +135,9 @@ const CurvedNavbar = () => {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden absolute top-full left-0 w-full bg-gradient-to-r from-purple-700 to-blue-500 shadow-md overflow-hidden z-40"
+            className="md:hidden absolute  top-full right-0  px-8 bg-gradient-to-r from-[#2e2e2eef] to-[#35b3d3ef] shadow-md  z-40 rounded-[12px] rounded-tr-none"
           >
-            <ul className="flex flex-col items-center py-4 text-white">
+            <ul className="flex flex-col   items-center py-4 text-white">
               {navLinks.map((link) => (
                 <li
                   key={link.name}
@@ -145,7 +146,7 @@ const CurvedNavbar = () => {
                 >
                   <Link
                     href={link.href}
-                    className="block py-2 text-lg hover:text-blue-200 transition-colors"
+                    className="block py-2 text-lg hover:text-amber-400 transition-colors"
                   >
                     {link.name}
                   </Link>
@@ -156,7 +157,7 @@ const CurvedNavbar = () => {
               <li className="relative w-full text-center">
                 <button
                   onClick={() => setIsProjectsOpen(!isProjectsOpen)}
-                  className="w-full py-2 text-lg hover:text-blue-200 transition-colors flex items-center justify-center"
+                  className="w-full py-2 text-lg hover:text-amber-400 transition-colors flex items-center justify-center"
                 >
                   Projects
                   <span className="ml-2 text-sm">
@@ -171,7 +172,7 @@ const CurvedNavbar = () => {
                       animate={{ opacity: 1, height: "auto" }}
                       exit={{ opacity: 0, height: 0 }}
                       transition={{ duration: 0.2 }}
-                      className="bg-purple-800 bg-opacity-30 rounded-md mt-2 mx-auto w-10/12 overflow-hidden"
+                      className="bg-[#ceb36a]  bg-opacity-10 right-0 rounded-[4px] mt-2 "
                     >
                       {projectCategories.map((project) => (
                         <li
@@ -180,7 +181,7 @@ const CurvedNavbar = () => {
                         >
                           <Link
                             href={project.href}
-                            className="block py-2 text-base hover:bg-purple-700/50"
+                            className="block py-2 px-2 text-base hover:bg-purple-700/50"
                           >
                             {project.name}
                           </Link>

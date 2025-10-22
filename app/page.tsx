@@ -18,6 +18,7 @@ export default function Home() {
               </p>`}
       ></Intro>
       <EducationSection />
+      <SkillsSection />
       <ContactSection
         contactImageUrl="/images/contact.png" 
         email="mosanta91977@gmail.com"
@@ -25,7 +26,7 @@ export default function Home() {
         whatsapp="https://www.linkedin.com/in/yourprofile"
       />
 
-      <SkillsSection />
+      
     </>
   );
 }
