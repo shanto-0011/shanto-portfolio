@@ -19,7 +19,7 @@ const ContactSection = ({
 ContactSectionProps) => {
   return (
     <section className="w-full py-8  px-4 md:px-8 ">
-      <div className="text-center mb-12  flex justify-end w-full">
+      <div className="text-center mb-12  flex justify-center  md:justify-end w-full">
         <Image
           src="/images/communication.png"
           alt="Contact Header"

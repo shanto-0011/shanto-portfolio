@@ -35,8 +35,18 @@ import SkillCard from "./SkillCard";
 const SkillsSection = () => {
   return (
     <section id="skills" className="py-8  px-4 md:px-8">
+      <div className="text-center mb-12  flex justify-center  md:justify-start w-full">
+        <Image
+          src="/images/skills.png"
+          alt="Institute Header"
+          width={310}
+          height={18}
+          className=" max-h-20  max-w-[400] md:w-[40%] rounded-[12px] shadow-2xs shadow-amber-300"
+          priority
+        />
+      </div>
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12  flex justify-start w-full">
+        {/* <div className="text-center mb-12  flex justify-start w-full">
           <Image
             src="/images/skills.png"
             alt="My Skills Header"
@@ -45,7 +55,7 @@ const SkillsSection = () => {
             className=" max-h-20  max-w-[400] md:w-[40%]  rounded-[12px] shadow-2xs shadow-amber-300"
             priority
           />
-        </div>
+        </div> */}
 
         <div className="grid grid-cols-1 md:grid-cols-2    lg:grid-cols-3 gap-8">
           <SkillCard

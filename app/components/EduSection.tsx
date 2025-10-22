@@ -12,7 +12,7 @@ const EducationSection = () => {
         flex flex-col items-center justify-center
       "
     >
-      <div className="text-center mb-12  flex justify-end w-full">
+      <div className="text-center mb-12  flex justify-center  md:justify-end w-full">
         <Image
           src="/images/institute.png"
           alt="Institute Header"
