@@ -1,6 +1,6 @@
-// components/AnimatedEducationCard.tsx
+
 'use client';
-import React, { useState, useEffect } from "react"; // Import useState and useEffect
+import React, { useState, useEffect } from "react"; 
 import Image from "next/image";
 
 interface AnimatedEducationCardProps {

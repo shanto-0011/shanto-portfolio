@@ -19,21 +19,17 @@ const ContactSection = ({
 ContactSectionProps) => {
   return (
     <section className="w-full py-8  px-4 md:px-8 ">
+      <div className="text-center mb-12  flex justify-end w-full">
+        <Image
+          src="/images/communication.png"
+          alt="Contact Header"
+          width={310}
+          height={18}
+          className=" max-h-20  max-w-[400] md:w-[45%]  rounded-[12px] shadow-2xs shadow-amber-300"
+          priority
+        />
+      </div>
       <div className="max-w-6xl mx-auto ">
-        <div className="text-center mb-12  flex justify-end w-full">
-          <Image
-            src="/images/communication.png"
-            alt="Contact Header"
-            width={310}
-            height={18}
-            className=" max-h-20  max-w-[400] md:w-[45%]  rounded-[12px] shadow-2xs shadow-amber-300"
-            priority
-          />
-        </div>
-        {/* <h2 className="text-[24px] md:text-[28px] font-[700]  mb-8 text-center">
-          Get in Touch
-        </h2> */}
-
         <div className="flex flex-col sm:flex-row items-center sm:items-stretch   ">
           <div
             className="

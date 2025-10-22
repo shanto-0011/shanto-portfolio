@@ -22,9 +22,6 @@ const EducationSection = () => {
           priority
         />
       </div>
-      {/* <h2 className="text-[24px] md:text-[28px] font-[600]  mb-6 text-center">
-        Educational Institute
-      </h2> */}
 
       <div
         className="
@@ -32,8 +29,6 @@ const EducationSection = () => {
           "
       >
         <div className="group">
-          {" "}
-          {/* Add group to parent of card for hover effect */}
           <AnimatedEducationCard
             imageUrl="/images/annada.jpg"
             title="Annada Govt. High School"
@@ -61,10 +56,4 @@ const EducationSection = () => {
 
 export default EducationSection;
 
-////////////////////////////////////////
 
-/* const EduSection = () => {
-  return <div>EduSection</div>;
-};
-
-export default EduSection; */

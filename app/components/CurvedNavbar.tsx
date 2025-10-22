@@ -6,16 +6,18 @@ import { motion, AnimatePresence } from "framer-motion";
 import CustomTheme from "../theme/CustomTheme";
 
 const navLinks = [
-  { name: "About", href: "#about" },
-  { name: "Education", href: "#education" },
-  { name: "Skills", href: "#skill" },
-  { name: "Contact", href: "#contact" },
+  { name: "About", href: "/" },
+  { name: "Education", href: "/" },
+  { name: "Skills", href: "/" },
+  { name: "Contact", href: "/" },
   
 ];
 
 const projectCategories = [
-  { name: "Professional", href: "/projects/category-a" },
-  { name: "Personal", href: "/projects/category-b" },
+  { name: "Professional", href: "/" },
+  { name: "Personal", href: "/" },
+  // { name: "Professional", href: "/projects/category-a" },
+  // { name: "Personal", href: "/projects/category-b" },
 ];
 
 const CurvedNavbar = () => {

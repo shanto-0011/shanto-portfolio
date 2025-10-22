@@ -1,4 +1,3 @@
-// components/SkillsSection.tsx
 import React from "react";
 import Image from "next/image";
 import { FaDatabase, FaJava, FaGitAlt, FaFileExcel } from "react-icons/fa";
@@ -48,10 +47,7 @@ const SkillsSection = () => {
           />
         </div>
 
-       
         <div className="grid grid-cols-1 md:grid-cols-2    lg:grid-cols-3 gap-8">
-         
-
           <SkillCard
             cardImageUrl="/images/website.png"
             cardTitle="Full-Stack Development"
@@ -120,7 +116,9 @@ const SkillsSection = () => {
               },
               {
                 name: "Databases: MySQL, MongoDB",
-                icon: <SiMongodb className="inline-block mr-2 text-green-500" />,
+                icon: (
+                  <SiMongodb className="inline-block mr-2 text-green-500" />
+                ),
               },
               {
                 name: "Firebase",
@@ -134,7 +132,7 @@ const SkillsSection = () => {
                   <SiPusher className="inline-block mr-2 text-purple-500" />
                 ),
               },
-              
+
               {
                 name: "Excel Automation",
                 icon: (

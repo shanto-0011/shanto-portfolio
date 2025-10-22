@@ -1,6 +1,4 @@
-import Image from "next/image";
-import CustomTheme from "./theme/CustomTheme";
-import CurvedNavbar from "./components/CurvedNavbar";
+
 import Intro from "./components/Intro";
 import EducationSection from "./components/EduSection";
 import ContactSection from "./components/contact";
