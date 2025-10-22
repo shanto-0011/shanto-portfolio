@@ -1,20 +1,30 @@
 import React from "react";
 import AnimatedEducationCard from "./AnimatedEducationCard";
+import Image from "next/image";
 
 const EducationSection = () => {
   return (
     <section
-    
       className="
         w-full py-4 px-4 md:px-8 my-8 rounded-[10px]
-        bg-gradient-to-br from-[#6898f0] to-fuchsia-200
+       
         
         flex flex-col items-center justify-center
       "
     >
-      <h2 className="text-[24px] md:text-[28px] font-[600]  mb-6 text-center">
+      <div className="text-center mb-12  ">
+        <Image
+          src="/images/institute.png"
+          alt="My Skills Header"
+          width={310}
+          height={18}
+          className="mx-auto max-h-18  max-w-[310] rounded-[12px] shadow-2xs shadow-amber-300"
+          priority
+        />
+      </div>
+      {/* <h2 className="text-[24px] md:text-[28px] font-[600]  mb-6 text-center">
         Educational Institute
-      </h2>
+      </h2> */}
 
       <div
         className="
