@@ -18,7 +18,7 @@ const EducationSection = () => {
           alt="Institute Header"
           width={310}
           height={18}
-          className=" max-h-20  max-w-[400] md:w-[45%] rounded-[12px] shadow-2xs shadow-amber-300"
+          className=" max-h-20  max-w-[400] md:w-[40%] rounded-[12px] shadow-2xs shadow-amber-300"
           priority
         />
       </div>

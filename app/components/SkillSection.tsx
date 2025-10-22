@@ -34,7 +34,7 @@ import SkillCard from "./SkillCard";
 
 const SkillsSection = () => {
   return (
-    <section id="skills" className="py-8 ">
+    <section id="skills" className="py-8  px-4 md:px-8">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12  flex justify-start w-full">
           <Image
@@ -42,7 +42,7 @@ const SkillsSection = () => {
             alt="My Skills Header"
             width={310}
             height={18}
-            className=" max-h-20  max-w-[400] md:w-[45%]  rounded-[12px] shadow-2xs shadow-amber-300"
+            className=" max-h-20  max-w-[400] md:w-[40%]  rounded-[12px] shadow-2xs shadow-amber-300"
             priority
           />
         </div>
