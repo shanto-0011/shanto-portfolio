@@ -10,7 +10,6 @@ import {
   SiTailwindcss,
   SiC,
   SiPhp,
-  SiMysql,
   SiMongodb,
   SiPusher,
 } from "react-icons/si";
@@ -38,20 +37,20 @@ const SkillsSection = () => {
   return (
     <section id="skills" className="py-8 ">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12 ">
+        <div className="text-center mb-12  ">
           <Image
             src="/images/skills.png"
             alt="My Skills Header"
-            width={320}
+            width={310}
             height={18}
-            className="mx-auto max-h-18  max-w-[320] rounded-[12px]"
+            className="mx-auto max-h-18  max-w-[310] rounded-[12px] shadow-2xs shadow-amber-300"
             priority
           />
         </div>
 
-        {/* Skills Grid */}
+       
         <div className="grid grid-cols-1 md:grid-cols-2    lg:grid-cols-3 gap-8">
-          {/* Full-Stack Development */}
+         
 
           <SkillCard
             cardImageUrl="/images/website.png"
