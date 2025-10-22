@@ -1,0 +1,42 @@
+
+import React from "react";
+import Image from "next/image";
+
+interface cardProperty {
+  cardImageUrl: string;
+  cardTitle: string;
+  cardProperty: { name: string; icon: React.ReactNode }[];
+}
+
+const SkillCard = ({ cardImageUrl, cardTitle, cardProperty }: cardProperty) => {
+  return (
+    <div className="card rounded-[12px] px-4 pb-2 max-w-[500px] mx-auto my-auto shadow-lg shadow-gray-400">
+      <div className="card-body">
+        <div className="text-center ">
+          <Image
+            src={cardImageUrl}
+            alt={`${cardTitle} Image`}
+            width={45}
+            height={45}
+            className="mx-auto max-h-18 max-w-[320] rounded-[12px]"
+            priority
+          />
+        </div>
+        <h3 className="card-title text-[24px] text-center justify-center mb-4 flex items-center gap-3">
+          {cardTitle}
+        </h3>
+        <ul className="list-none space-y-2 text-lg">
+          {cardProperty.map((skill, index) => (
+            <li key={index}>
+              <span className="inline-block mr-2">{skill.icon}</span>
+              {skill.name}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  );
+};
+
+export default SkillCard;
+

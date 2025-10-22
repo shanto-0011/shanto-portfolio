@@ -4,6 +4,7 @@ import CurvedNavbar from "./components/CurvedNavbar";
 import Intro from "./components/Intro";
 import EducationSection from "./components/EduSection";
 import ContactSection from "./components/contact";
+import SkillsSection from "./components/SkillSection";
 
 export default function Home() {
   return (
@@ -23,6 +24,8 @@ export default function Home() {
         phone="+8801646003802"
         whatsapp="https://www.linkedin.com/in/yourprofile"
       />
+
+      <SkillsSection />
     </>
   );
 }
