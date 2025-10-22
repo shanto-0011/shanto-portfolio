@@ -20,13 +20,13 @@ ContactSectionProps) => {
   return (
     <section className="w-full py-8  px-4 md:px-8 ">
       <div className="max-w-6xl mx-auto ">
-        <div className="text-center mb-12  ">
+        <div className="text-center mb-12  flex justify-end w-full">
           <Image
             src="/images/communication.png"
-            alt="My Skills Header"
+            alt="Contact Header"
             width={310}
             height={18}
-            className="mx-auto max-h-18  max-w-[310] rounded-[12px] shadow-2xs shadow-amber-300"
+            className=" max-h-20  max-w-[400] md:w-[45%]  rounded-[12px] shadow-2xs shadow-amber-300"
             priority
           />
         </div>

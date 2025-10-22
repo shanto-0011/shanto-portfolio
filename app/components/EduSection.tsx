@@ -12,13 +12,13 @@ const EducationSection = () => {
         flex flex-col items-center justify-center
       "
     >
-      <div className="text-center mb-12  ">
+      <div className="text-center mb-12  flex justify-end w-full">
         <Image
           src="/images/institute.png"
-          alt="My Skills Header"
+          alt="Institute Header"
           width={310}
           height={18}
-          className="mx-auto max-h-18  max-w-[310] rounded-[12px] shadow-2xs shadow-amber-300"
+          className=" max-h-20  max-w-[400] md:w-[45%] rounded-[12px] shadow-2xs shadow-amber-300"
           priority
         />
       </div>
