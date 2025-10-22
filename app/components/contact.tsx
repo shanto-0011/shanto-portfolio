@@ -20,9 +20,19 @@ ContactSectionProps) => {
   return (
     <section className="w-full py-8  px-4 md:px-8 ">
       <div className="max-w-6xl mx-auto ">
-        <h2 className="text-[24px] md:text-[28px] font-[700]  mb-8 text-center">
+        <div className="text-center mb-12  ">
+          <Image
+            src="/images/communication.png"
+            alt="My Skills Header"
+            width={310}
+            height={18}
+            className="mx-auto max-h-18  max-w-[310] rounded-[12px] shadow-2xs shadow-amber-300"
+            priority
+          />
+        </div>
+        {/* <h2 className="text-[24px] md:text-[28px] font-[700]  mb-8 text-center">
           Get in Touch
-        </h2>
+        </h2> */}
 
         <div className="flex flex-col sm:flex-row items-center sm:items-stretch   ">
           <div
@@ -92,7 +102,6 @@ ContactSectionProps) => {
               />
             </div>
 
-            
             <div className="space-y-[10px] mb-6 w-full max-w-xs sm:max-w-none">
               <p className="flex items-start text-[16px] font-[400]">
                 <FaEnvelope className="mr-4 text-[#be28ec] text-[18px] flex-shrink-0 text-center py-auto  my-auto" />
