@@ -17,29 +17,26 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "MD. SHANTO",
-  description: "Shanto is a Full stack developer.",
+  description: "Shanto is a Full Stack Developer.",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased
-          bg-base-100 text-base-content static top-0 left-0 w-full h-full`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-base-100 text-base-content flex justify-center min-h-screen`}
       >
-        <ThemeProvider
-          attribute="data-theme"
-          defaultTheme="system"
-          enableSystem
-        >
-          <CurvedNavbar />
-            <main className="p-3 md:p-2 lg:p-3 relative">
-            <Theme>{children}</Theme>
-            </main>
+        <ThemeProvider attribute="data-theme" defaultTheme="system" enableSystem>
+          <Theme>
+            <div className="w-full max-w-[1115px]">
+              <CurvedNavbar />
+              <main className="p-3 md:p-2 lg:p-3 relative">{children}</main>
+            </div>
+          </Theme>
         </ThemeProvider>
       </body>
     </html>
