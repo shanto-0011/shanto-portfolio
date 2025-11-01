@@ -6,11 +6,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import CustomTheme from "../theme/CustomTheme";
 
 const navLinks = [
-  { name: "About", href: "/" },
-  { name: "Education", href: "/" },
-  { name: "Skills", href: "/" },
-  { name: "Contact", href: "/" },
-  
+  { name: "About", href: "#intro" },
+  { name: "Education", href: "#education" },
+  { name: "Skills", href: "#skills" },
+  { name: "Contact", href: "#contact" },
 ];
 
 const projectCategories = [
@@ -30,13 +29,17 @@ const CurvedNavbar = () => {
   useEffect(() => {
     if (isProjectsOpen && projectsRef.current) {
       const rect = projectsRef.current.getBoundingClientRect();
+      const screenWidth = window.innerWidth;
+     
       setDropdownPosition({
         top: rect.bottom + window.scrollY,
         left: rect.left + rect.width / 2,
       });
+
+      
     }
   }, [isProjectsOpen]);
-
+ 
   return (
     <div className="relative z-40">
       {/* ========= NAVBAR ========= */}
@@ -44,15 +47,15 @@ const CurvedNavbar = () => {
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.3 }}
-        className="stick min-h-21 top-0 left-0 w-full z-30 bg-gradient-to-r from-[#00c3ff] to-[#cb01fd] shadow-xl
+        className=" min-h-21 top-0 left-0 w-full z-30 bg-gradient-to-r from-[#00c3ff] to-[#cb01fd] shadow-xl
                    [clip-path:polygon(0_0,_100%_0%,_99%_60%,_60%_60%,_70%_70%,_40%_90%,_30%_70%,_1%_70%)]
                    md:clip-path-none"
       >
-        <div className="max-w-6xl mx-auto flex items-center justify-between py-4 px-4 relative">
+        <div className=" mx-auto flex items-center justify-between py-4 px-4 relative">
           {/* LEFT - Name */}
           <div className="flex-1">
             <Link href="/" className="text-lg font-bold truncate text-white">
-              MD. SHANTO 
+              MD. SHANTO
             </Link>
           </div>
 
@@ -99,7 +102,7 @@ const CurvedNavbar = () => {
       </motion.nav>
 
       {/* ========= PROJECTS DROPDOWN (Desktop Only) ========= */}
-      <AnimatePresence>
+      {/* <AnimatePresence>
         {isProjectsOpen && (
           <motion.ul
             initial={{ opacity: 0, y: -10 }}
@@ -127,7 +130,7 @@ const CurvedNavbar = () => {
             ))}
           </motion.ul>
         )}
-      </AnimatePresence>
+      </AnimatePresence> */}
 
       {/* ========= MOBILE MENU ========= */}
       <AnimatePresence>

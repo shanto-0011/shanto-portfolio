@@ -5,6 +5,7 @@ import Image from "next/image";
 const EducationSection = () => {
   return (
     <section
+      id="education"
       className="
         w-full py-4 px-4 md:px-8 my-8 rounded-[10px]
        
