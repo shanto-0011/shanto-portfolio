@@ -12,7 +12,7 @@ export default function Home() {
         text={`<p>
               Hello! I'm <strong>Shanto</strong> — a passionate Full Stack Developer with expertise in building dynamic, responsive web and mobile applications.
               I enjoy writing clean, efficient code and continuously exploring the latest technologies in the world of development.
-              Currently, I use <strong>Flutter</strong> for cross-platform mobile app development, and <strong>Laravel</strong> and <strong>Next.js</strong> for web development.
+              Currently, I use <strong>Flutter</strong> for cross-platform mobile app development, and <strong>Laravel</strong> and <strong>Next.js</strong> for restful API and web development.
               </p>`}
       ></Intro>
       <EducationSection />

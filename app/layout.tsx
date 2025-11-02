@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import { Theme } from "@radix-ui/themes";
 import CurvedNavbar from "./components/CurvedNavbar";
+import CustomBottom from "./components/CustomBottom";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,6 +36,7 @@ export default function RootLayout({
             <div className="w-full max-w-[1115px]">
               <CurvedNavbar />
               <main className="p-3 md:p-2 lg:p-3 relative">{children}</main>
+              <CustomBottom />
             </div>
           </Theme>
         </ThemeProvider>
