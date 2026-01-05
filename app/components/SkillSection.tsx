@@ -11,6 +11,7 @@ import {
   SiPhp,
   SiMongodb,
   SiPusher,
+  SiJetpackcompose
 } from "react-icons/si";
 import { RiFirebaseFill } from "react-icons/ri";
 import SkillCard from "./SkillCard";
@@ -104,6 +105,10 @@ const SkillsSection = () => {
               {
                 name: "Flutter (Dart)",
                 icon: <SiFlutter className="inline-block mr-2 text-blue-500" />,
+              },
+              {
+                name: "Jetpack Composer",
+                icon: <SiJetpackcompose className="inline-block mr-2 text-blue-500" />,
               },
             ]}
           />
