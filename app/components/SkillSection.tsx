@@ -108,7 +108,7 @@ const SkillsSection = () => {
               },
               {
                 name: "Android Jetpack Composer",
-                icon: <SiJetpackcompose className="inline-block mr-2 text-blue-500" />,
+                icon: <SiJetpackcompose className="inline-block mr-2 text-green-500" />,
               },
             ]}
           />
