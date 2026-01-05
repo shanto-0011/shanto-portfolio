@@ -33,14 +33,14 @@ const EducationSection = () => {
           <AnimatedEducationCard
             imageUrl="/images/annada.jpg"
             title="Annada Govt. High School"
-            description="I complete my secondary education here with excellent academic performance and extracurricular involvement."
+            description="I complete my secondary education from there with excellent academic performance and extracurricular involvement."
           />
         </div>
         <div className="group">
           <AnimatedEducationCard
             imageUrl="/images/bbaria.jpg"
             title="Brahmanbaria Govt. College"
-            description="I pursued my higher secondary education here, focusing on science subjects and actively participating in various clubs and activities."
+            description="I pursued my higher secondary education from there, focusing on science subjects."
           />
         </div>
         <div className="group">
