@@ -1,4 +1,3 @@
-
 import React from "react";
 import Image from "next/image";
 
@@ -25,11 +24,13 @@ const SkillCard = ({ cardImageUrl, cardTitle, cardProperty }: cardProperty) => {
         <h3 className="card-title text-[24px] text-center justify-center mb-4 flex items-center gap-3">
           {cardTitle}
         </h3>
+
+        
         <ul className="list-none space-y-2 text-lg">
           {cardProperty.map((skill, index) => (
-            <li key={index}>
-              <span className="inline-block mr-2">{skill.icon}</span>
-              {skill.name}
+            <li key={index} className="flex items-start">
+              <span className="mr-2 flex-shrink-0">{skill.icon}</span>
+              <span>{skill.name}</span>
             </li>
           ))}
         </ul>
@@ -39,4 +40,3 @@ const SkillCard = ({ cardImageUrl, cardTitle, cardProperty }: cardProperty) => {
 };
 
 export default SkillCard;
-
