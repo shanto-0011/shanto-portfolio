@@ -5,7 +5,7 @@ const CustomBottom = () => {
   return (
     <footer>
       <div className="bottom flex justify-end">
-        <p>©SHANTA,{currentYear} . All rights reserved.</p>
+        <p>©SHANTO,{currentYear} . All rights reserved.</p>
       </div>
     </footer>
   );
